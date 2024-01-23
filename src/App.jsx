@@ -28,7 +28,7 @@ export default function App() {
         </div>
         <button type="submit">Submit</button>
       </form>
-      <div className="name">{`Full Name: ${firstname + " " + lastname}`}</div>
+      <div className={firstname && lastname ? "name" : "hidden" }>{`Full Name: ${firstname + " " + lastname}`}</div>
     </div>
   );
 }
