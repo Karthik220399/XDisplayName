@@ -38,7 +38,8 @@ export default function App() {
         </div>
         <button type="submit">Submit</button>
       </form>
-      <div className={FullName? "name" : "hidden"}>{`Full Name: ${FullName}`}</div>
+      {FullName? <div className="name">{`Full Name: ${FullName}`}</div>:null}
+      
     </div>
   );
 }
